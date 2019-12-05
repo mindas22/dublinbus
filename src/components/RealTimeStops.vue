@@ -131,7 +131,9 @@ export default {
         this.items = response.data.results;
         this.loading = false;
       } catch (error) {
-        console.error(error);
+        /* eslint-disable no-console */
+        console.error(error.response);
+        /* eslint-disable no-console */
         this.loading = false;
       }
     }
