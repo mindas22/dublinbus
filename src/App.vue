@@ -3,7 +3,7 @@
     <v-app-bar app color="amber lighten-1" dark>
       <div class="d-flex align-center">
         <v-toolbar-title>
-          <v-icon sharp>directions_bus</v-icon>
+          <!-- <v-icon sharp>directions_bus</v-icon> -->
           Dublin Bus Real-time information</v-toolbar-title
         >
       </div>
@@ -26,7 +26,6 @@
 </template>
 
 <script>
-// import HelloWorld from "./components/HelloWorld";
 import RealTimeStops from "./components/RealTimeStops";
 
 export default {

@@ -15,8 +15,9 @@
           ></v-text-field>
         </v-flex>
         <v-flex sm3>
-          <v-btn @click="onSubmit()" color="success"
-            ><v-icon sharp class="pr-2"> search </v-icon>search
+          <v-btn @click="onSubmit()" color="success">
+            <!-- <v-icon sharp class="pr-2"> search </v-icon> -->
+            search
           </v-btn>
         </v-flex>
         <br />
