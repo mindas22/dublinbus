@@ -122,7 +122,7 @@ export default {
     async onSubmit() {
       this.loading = true;
       this.submitted = true;
-      let url = `https://cors-anywhere.herokuapp.com/https://data.dublinked.ie/cgi-bin/rtpi/realtimebusinformation?stopid=${this.stopid}`;
+      let url = `https://data.dublinked.ie/cgi-bin/rtpi/realtimebusinformation?stopid=${this.stopid}`;
       try {
         const response = await axios.get(url);
         this.items = response.data.results;
