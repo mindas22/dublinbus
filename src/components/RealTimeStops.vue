@@ -92,37 +92,37 @@ export default {
           align: "center",
           sortable: false,
           value: "route",
-          class: ["text-sm-center"]
+          class: ["text-sm-center"],
         },
         {
           text: "Destination",
           value: "destination",
           sortable: false,
           align: "center",
-          class: ["text-sm-center"]
+          class: ["text-sm-center"],
         },
         {
           text: "Expected Time",
           value: "arrivaldatetime",
           sortable: true,
-          class: ["hidden-xs-only", "text-sm-center"]
+          class: ["hidden-xs-only", "text-sm-center"],
         },
         {
           text: "Due Time",
           value: "duetime",
           class: ["text-sm-center"],
-          align: "center"
-        }
+          align: "center",
+        },
       ],
       items: [],
-      results: []
+      results: [],
     };
   },
   methods: {
     async onSubmit() {
       this.loading = true;
       this.submitted = true;
-      let url = `https://data.dublinked.ie/cgi-bin/rtpi/realtimebusinformation?stopid=${this.stopid}`;
+      let url = `https://data.smartdublin.ie/cgi-bin/rtpi/realtimebusinformation?stopid=${this.stopid}`;
       try {
         const response = await axios.get(url);
         this.items = response.data.results;
@@ -137,8 +137,8 @@ export default {
         /* eslint-disable no-console */
         this.loading = false;
       }
-    }
-  }
+    },
+  },
 };
 </script>
 
